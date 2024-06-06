@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail {
+    background-color: #6c757d;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 1.5rem;
+}
+
+.content {
+    padding: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.buttons button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #29292a17;
+    color: #faf9f9;
+}
+
+.buttons button:nth-child(2) {
+    background-color: #96a3ae;
+}
+
+.timestamp {
+    margin-top: 1rem;
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="thumbnail">Thumbnail-1</div>
+            <div class="content">
+                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="buttons">
+                    <button>View</button>
+                    <button>Edit</button>
+                </div>
+                <div class="timestamp">9 mins</div>
+            </div>
+        </div>
+        <!-- Repeat card for the other five cards -->
+        <div class="card">
+            <div class="thumbnail">Thumbnail-2</div>
+            <div class="content">
+                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="buttons">
+                    <button>View</button>
+                    <button>Edit</button>
+                </div>
+                <div class="timestamp">9 mins</div>
+            </div>
+        </div>
+        <!-- Add additional cards here -->
+        <div class="card">
+            <div class="thumbnail">Thumbnail-3</div>
+            <div class="content">
+                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="buttons">
+                    <button>View</button>
+                    <button>Edit</button>
+                </div>
+                <div class="timestamp">9 mins</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thumbnail">Thumbnail-4</div>
+            <div class="content">
+                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="buttons">
+                    <button>View</button>
+                    <button>Edit</button>
+                </div>
+                <div class="timestamp">9 mins</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thumbnail">Thumbnail-5</div>
+            <div class="content">
+                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="buttons">
+                    <button>View</button>
+                    <button>Edit</button>
+                </div>
+                <div class="timestamp">9 mins</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thumbnail">Thumbnail-6</div>
+            <div class="content">
+                <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="buttons">
+                    <button>View</button>
+                    <button>Edit</button>
+                </div>
+                <div class="timestamp">9 mins</div>
+            </div>
+        </div>
+       
+    </div>
+</body>
+</html>
